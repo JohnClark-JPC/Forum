@@ -1,7 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@{ ViewData["Title"] = "Home Page";
 }
-
+@{ ViewBag.ForumChoice = 1;
+}
 
 <!DOCTYPE>
 
@@ -24,6 +24,29 @@
                 <div class="topic-container">
                     <table>
                         <tr>
+                            <td>
+                                <a class="nav-link text-dark" @{ViewBag.ForumChoice = 1; } asp-area="" asp-controller="" asp-action="Forum"> Topic A</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="nav-link text-dark" @{ViewBag.ForumChoice = 2; } asp-area="" asp-controller="" asp-action="Forum"> Topic B</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="nav-link text-dark" @{ViewBag.ForumChoice = 3; } asp-area="" asp-controller="" asp-action="Forum"> Topic C</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <a href="#">
+                        <h2>Performance</h2>
+                    </a>
+                    <table>
+                        <tr>
+                            <th>Topics</th>
+                        </tr>
+                        <tr>
                             <td>Topic A</td>
                         </tr>
                         <tr>
@@ -35,7 +58,26 @@
                         <tr>
                             <td>Topic D</td>
                         </tr>
-
+                    </table>
+                    <a href="#">
+                        <h2>Off-topic</h2>
+                    </a>
+                    <table>
+                        <tr>
+                            <th>Topics</th>
+                        </tr>
+                        <tr>
+                            <td>Topic A</td>
+                        </tr>
+                        <tr>
+                            <td>Topic B</td>
+                        </tr>
+                        <tr>
+                            <td>Topic C</td>
+                        </tr>
+                        <tr>
+                            <td>Topic D</td>
+                        </tr>
                     </table>
                 </div>
             </section>

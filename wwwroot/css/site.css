@@ -60,17 +60,13 @@ html {
     min-height: 100%;
 }
 
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-}
 
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 50px; /* Vertically center the text there */
 }
 
 /* Index.csthml CSS*/
@@ -106,9 +102,9 @@ section {
 body {
     background-color: #f2f2f2;
     margin-top: 25px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     margin-left: 50px;
-    margin right: 50px;
+    margin-right: 50px; 
 }
 
 /* Logo Section */
@@ -132,7 +128,7 @@ body {
 .topic-container table {
     padding: 10px 15px;
     vertical-align: top;
-    width: 1160px;
+    width: 1000px;
 }
 
 .topic-container th {
