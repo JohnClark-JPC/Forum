@@ -23,11 +23,20 @@ namespace Forum.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult NewTopic()
         {
             return View();
         }
 
+        public IActionResult Forum()
+        {
+            return View();
+        }
+
+        public IActionResult Topic()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
